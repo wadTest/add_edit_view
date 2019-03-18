@@ -72,11 +72,12 @@
 
         <Button
             android:id="@+id/buttonAdd"
-            android:layout_width="80dp"
+            android:layout_width="180dp"
+            android:textSize="20sp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Add" />
+            android:text="เพิ่มข้อมูล" />
 
     </LinearLayout>
 

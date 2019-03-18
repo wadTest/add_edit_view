@@ -18,14 +18,6 @@ public class MainActivity extends Activity {
         mHelper.close();
         mDb.close();
 
-        Button buttonView = (Button)findViewById(R.id.buttonView);
-        buttonView.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ViewStudent.class);
-                startActivity(intent);
-            }
-        });
-
         Button buttonAdd = (Button)findViewById(R.id.buttonAdd);
         buttonAdd.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -38,6 +30,14 @@ public class MainActivity extends Activity {
         buttonEdit.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EditStudent.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonView = (Button)findViewById(R.id.buttonView);
+        buttonView.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ViewStudent.class);
                 startActivity(intent);
             }
         });

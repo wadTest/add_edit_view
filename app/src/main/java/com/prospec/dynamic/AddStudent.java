@@ -26,6 +26,7 @@ public class AddStudent extends Activity {
         final EditText editSchool = (EditText)findViewById(R.id.editSchool);
 
         Button buttonAdd = (Button)findViewById(R.id.buttonAdd);
+
         buttonAdd.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 String name = editName.getText().toString();
